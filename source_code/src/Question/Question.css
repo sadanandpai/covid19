@@ -1,0 +1,53 @@
+.box{
+    max-width: 600px;
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background-color: rgb(228, 224, 224);
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+input{
+    margin: 10px;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.answer-selected{
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {transform: rotatey(0deg);}
+    50% {transform: rotatey(90deg);}
+    100% {transform: rotatey(0deg);}
+}
+
+.delay-1{
+    animation-name: slowerdisplay;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slowerdisplay {
+    0% {opacity: 0; }
+    100% {opacity: 1; }
+}
+
+.result{
+    text-align: center;
+    font-size: 20px;
+    top: 50px;
+    position: relative;
+    font-weight: bold;
+}

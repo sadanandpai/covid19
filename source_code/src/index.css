@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.align-middle{
+  text-align: center;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.hidden-display{
+  display: none;
+}
+
+.w-50{
+  width: 50px;
+}
+
+.w-rest{
+  width: calc(100% - 70px);
+}
+
+.align-v-middle{
+  vertical-align: middle;
+}
+
+.margin-10{
+  margin: 10px 0px;
+}
+
+.no-top-padding-margin{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.corona-bottom-right{
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+
+  animation: giggle 10s forwards infinite cubic-bezier(0.1, 1, 0.1, 1);
+}
+
+@keyframes giggle{
+  from {transform: rotatez(-30deg);}
+  to {transform: rotatez(330deg);}
+}
+
+.corona-bottom-left{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.virus1{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 10vw;
+  animation: virusmovement 10s infinite forwards;
+  animation-direction: alternate-reverse;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.virus2{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 10px;
+  left: 50vw;
+  animation: virusmovement 10s infinite forwards;
+  animation-direction: alternate-reverse;
+  animation-timing-function: cubic-bezier(1,1.77,0,-0.39);
+}
+
+.virus3{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  left: 80vw;
+  animation: virusmovement 10s infinite forwards;
+  animation-direction: alternate-reverse;
+  animation-timing-function: cubic-bezier(.26,1.81,.8,-0.38);
+}
+
+@keyframes virusmovement{
+  from {transform: translatey(0px);}
+  to {transform: translatey(90vh);}
+}
